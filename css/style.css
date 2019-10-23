@@ -1,0 +1,158 @@
+html {
+    /*    1rem = 16px*/
+    font-size: 1rem;
+}
+
+body {
+    background-color: white;
+    /*    font-family: 'Lato', sans-serif;*/
+    font-weight: 300;
+    font-size: 1.2rem;
+    /*    line-height is 150% of the font size*/
+    line-height: 1.5;
+    color: black;
+    /* font-family: 'Comfortaa', cursive; */
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+    margin-bottom: 1.3rem;
+}
+
+/*this is a group selection, selecting all the headlines h1-h4*/
+h1,
+h2,
+h3,
+h4 {
+    color: darkblue;
+    /*        font-family: 'Merriweather', serif;*/
+    /*    font-weight: 700;*/
+    line-height: 1.2;
+}
+
+h1 {
+    /*  top:0 right:0  bottom:0.5rem left:0*/
+    margin: 0 0 0.5rem 0;
+    font-size: 3.157rem;
+}
+
+h2 {
+    /*  top:1.414rem right:0  bottom:0.5rem left:0*/
+    margin: 1.414rem 0 1rem 0;
+    font-size: 2.369rem;
+}
+
+h3 {
+    /*  top:1.414rem right:0  bottom:0.5rem left:0*/
+    margin: 1.414em 0 0.5rem 0;
+    font-size: 1.777rem;
+}
+
+h4 {
+    /*  top:1.414rem right:0  bottom:0.5rem left:0*/
+    margin: 1.414em 0 0.5rem 0;
+    font-size: 1.333rem;
+}
+
+
+/*Interactive elements*/
+
+/* link*/
+
+a {
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: rgb(133, 62, 255);
+    text-decoration: none;
+    font-style: italic;
+}
+
+/*button style*/
+/*solid button style*/
+.btn-primary {
+    /*    font-family: 'Merriweather', serif;*/
+    /*    font-weight: 700;*/
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    line-height: 2rem;
+    border-radius: 3rem;
+    /*    top:1 right:2 bottom:1 left:2*/
+    /*    the size of button*/
+    padding: .6rem 1rem;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    margin-top: 30px;
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+}
+
+/*outline button style*/
+.btn-outline-primary {
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    line-height: 2rem;
+    border-radius: 3rem;
+    padding: 1rem 2rem;
+    color: darkblue;
+    background-color: rgba(75, 0, 130, 0.4);
+    border: 1px darkblue solid;
+    transition: all 0.5s;
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    background-color: darkblue;
+    border-color: darkblue;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+  }
+
+.white {
+    color: whitesmoke;
+    font-size:8vw;
+}
+
+.button {
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    font-size:4vw;
+}
+
+.view {
+    background: lightblue url('/Users/jlee/Desktop/SENIOR/Artdes245/245webdesign/assignments/img/home_image_web@2x.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.main-text {
+    padding: 350px 0px 350px;
+}
+
+/* screen larger than mobile */
+@media only screen and (min-width:480px) {
+    .view {
+        padding: 400px 0rem 400px;
+    }
+    .white {
+        font-size:4vw;
+
+    }
+    .button {
+        font-size:1vw;
+    }
+}
