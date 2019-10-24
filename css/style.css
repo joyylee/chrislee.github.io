@@ -64,7 +64,7 @@ h4 {
 /* link*/
 
 a {
-    color: rgb(0, 0, 0);
+    color: rgb(67, 67, 116);
 }
 
 a:hover {
@@ -184,3 +184,7 @@ a:hover {
 /* #hompage h2{
     color: rebeccapurple;
 } */
+
+ul {
+    line-height: 3rem;
+}
