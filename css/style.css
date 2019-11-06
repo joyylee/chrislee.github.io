@@ -189,11 +189,9 @@ ul {
     line-height: 2.4rem;
 }
 
-
-/* .item {
-    height: 100vh;
-    width: 100vh;
-} */
+.row {
+    padding: 5rem;
+}
 
 .row>.column {
     padding: 0 8px;
@@ -220,7 +218,7 @@ ul {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
+    /* padding: 6rem; */
     left: 0;
     top: 0;
     width: 100%;
@@ -314,17 +312,6 @@ ul {
     top: 0;
 }
 
-
-/* Caption text */
-
-
-/* .caption-container {
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    padding: 2px 16px;
-    color: white;
-} */
-
 .active,
 .demo:hover {
     opacity: 1;
@@ -332,11 +319,14 @@ ul {
 
 img.hover-shadow {
     transition: 0.3s;
-    height: 30vh;
+    height: 100%;
+    width: 100%;
 }
 
 .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-;
+.demo {
+    width: 100%;
+}
