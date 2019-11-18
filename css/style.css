@@ -223,7 +223,7 @@ ul {
     /* padding: 6rem; */
     left: 0;
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     overflow: auto;
     background-color: rgb(255, 255, 255);
@@ -239,13 +239,15 @@ ul {
     padding: 0;
     width: 90%;
     max-width: 1200px;
+    border: none;
+    box-shadow: none;
 }
 
 
 /* The Close Button */
 
 .close {
-    color: #999;
+    color: rgb(94, 94, 94);
     position: absolute;
     top: 10px;
     right: 25px;
@@ -334,9 +336,32 @@ img.hover-shadow {
 }
 
 .padding {
-    padding: 6rem 0 0 2.3rem;
+    padding: 4rem 2rem 1rem 2rem;
 }
 
 .row-padding {
     padding: 0.5rem;
+}
+
+
+/* PLAY */
+
+#mydiv {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+}
+
+#mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+}
+
+.parts {
+    width: 10px;
+}
+
+.contact {
+    float: left;
 }
