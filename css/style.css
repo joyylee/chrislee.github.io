@@ -10,7 +10,7 @@ body {
     font-size: 1.2rem;
     /*    line-height is 150% of the font size*/
     line-height: 1.5;
-    color: black;
+    color: rgb(58, 58, 58);
     /* font-family: 'Comfortaa', cursive; */
     /* font-family: 'Josefin Sans', sans-serif; */
     font-family: 'Roboto Condensed', sans-serif;
