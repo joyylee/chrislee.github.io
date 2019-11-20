@@ -142,7 +142,7 @@ a:hover {
     border: 2px solid whitesmoke;
     border-radius: 0.5rem;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    font-size: 4vw;
+    font-size: 2vw;
 }
 
 .button:hover {
@@ -176,7 +176,7 @@ a:hover {
         font-size: 4vw;
     }
     .button {
-        font-size: 1vw;
+        font-size: 2vw;
     }
 }
 
@@ -364,4 +364,15 @@ img.hover-shadow {
 
 .contact {
     float: left;
+}
+
+.navbar {
+    padding: 0px;
+}
+
+@media (min-width: 580px) {
+    .navbar-expand-lg {
+        flex-flow: wrap;
+        justify-content: flex-start;
+    }
 }
