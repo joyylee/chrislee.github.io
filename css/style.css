@@ -376,3 +376,9 @@ img.hover-shadow {
         justify-content: flex-start;
     }
 }
+
+.nav {
+    display: grid;
+    text-align: right;
+    line-height: 1.2;
+}
