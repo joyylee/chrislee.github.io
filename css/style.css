@@ -204,6 +204,7 @@ ul {
 
 .row>.column {
     padding: 0 8px;
+    padding-bottom: 10px;
 }
 
 .row:after {
@@ -371,6 +372,7 @@ img.hover-shadow {
 
 .contact {
     float: left;
+    padding-top: 10px
 }
 
 .navbar {
