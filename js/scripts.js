@@ -7,12 +7,14 @@
 // Open the Modal
 function openModal() {
 
-    document.getElementById("myModal").style.display = "block";
+    console.log(document);
+    console.log(document.getElementById("myModal "));
+    document.getElementById("myModal ").style.display = "block";
 }
 
 // Close the Modal
 function closeModal() {
-    document.getElementById("myModal").style.display = "none";
+    document.getElementById("myModal ").style.display = "none";
 }
 
 var slideIndex = 1;
@@ -35,9 +37,9 @@ function currentSlide(n) {
 
 function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var captions = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
+    var slides = document.getElementsByClassName("mySlides ");
+    var captions = document.getElementsByClassName("demo ");
+    var captionText = document.getElementById("caption ");
 
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
@@ -61,8 +63,8 @@ function plusCaptions(n) {
 function showCaptions(n) {
     var i;
     // var slides = document.getElementsByClassName("mySlides");
-    var captions = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
+    var captions = document.getElementsByClassName("demo ");
+    var captionText = document.getElementById("caption ");
 
     if (n > captions.length) { captionsIndex = 1 }
     if (n < 1) { captionsIndex = captions.length }
