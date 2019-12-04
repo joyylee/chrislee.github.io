@@ -71,11 +71,11 @@ h4 {
 /* link*/
 
 a {
-    color: rgb(67, 67, 116);
+    color: rgb(128, 180, 227);
 }
 
 a:hover {
-    color: rgb(133, 62, 255);
+    color: rgb(145, 145, 145);
     text-decoration: none;
     font-style: italic;
 }

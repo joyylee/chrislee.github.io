@@ -1,0 +1,276 @@
+html {
+    /*    1rem = 16px*/
+    font-size: 1rem;
+}
+
+body {
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    /*    line-height is 150% of the font size*/
+    line-height: 1.6;
+    color: black;
+}
+
+p {
+    margin-bottom: 1.3rem;
+}
+
+/*this is a group selection, selecting all the headlines h1-h4*/
+h1,
+h2,
+h3,
+h4 {
+    color: darkblue;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 {
+    /*  top:0 right:0  bottom:0.5rem left:0*/
+    margin: 0 0 0.5rem 0;
+    font-size: 3.157rem;
+    color: red;
+}
+
+h2 {
+    /*  top:1.414rem right:0  bottom:0.5rem left:0*/
+    margin: 1.414rem 0 1rem 0;
+    font-size: 2.369rem;
+}
+
+h3 {
+    /*  top:1.414rem right:0  bottom:0.5rem left:0*/
+    margin: 1.414em 0 0.5rem 0;
+    font-size: 1.777rem;
+}
+
+h4 {
+    /*  top:1.414rem right:0  bottom:0.5rem left:0*/
+    margin: 1.414em 0 0.5rem 0;
+    font-size: 1.333rem;
+}
+
+
+/*Interactive elements*/
+
+/* link*/
+
+a {
+    color: #0404f7;
+}
+
+a:hover {
+    color: #B2B1AE;
+    /*    text-decoration: none;*/
+}
+
+/*button style*/
+/*solid button style*/
+.btn-primary {
+    /*    font-family: 'Merriweather', serif;*/
+    /*    font-weight: 700;*/
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    line-height: 2rem;
+    border-radius: 3rem;
+    /*    top:1 right:2 bottom:1 left:2*/
+    /*    the size of button*/
+    padding: .6rem 1rem;
+    background-color: 0x0404f7;
+    color: white;
+    border: none;
+    margin-top: 30px;
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+}
+
+/*outline button style*/
+.btn-outline-primary {
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    line-height: 2rem;
+    border-radius: 3rem;
+    padding: 1rem 2rem;
+    color: 0x0404f7;
+    background-color: rgba(75, 0, 130, 0.4);
+    border: 1px 0x0404f7 solid;
+    transition: all 0.5s;
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    background-color: 0x0404f7;
+    border-color: 0x0404f7;
+}
+
+/*class name starts with a dot*/
+.view {
+    background: lightblue url(../img/imghead_mobile.jpg) center center no-repeat;
+    background-size: cover;
+    /*    5rem for top and bottom, 0 for left and right padding*/
+    padding: 5rem 0;
+}
+
+.view h1 {
+    color: white;
+    text-align: center;
+
+}
+
+.view h2 {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    
+}
+
+
+/*home page*/
+/*# is used by id*/
+#homepage h2 {
+    color: white;
+}
+
+#homepage .view h2 {
+    color: white;
+}
+
+
+
+/*about page*/
+
+#aboutpage .team img {
+    margin-bottom: 2rem;
+}
+
+/*Portfolio thumbnails*/
+.portfolio-link img:hover {
+    opacity: 0.9;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+/*portfolio modal*/
+.portfolio-modal .modal-body {
+    position: static;
+}
+
+/*modal box size*/
+.portfolio-modal .modal-dialog {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    /*    align-item controls the vertical alignment: try start and center to see the difference*/
+    align-items: center;
+    /*    justify-content: controls the horizontal alignment*/
+    justify-content: center;
+    /*    enable the overflow to set the screen no scrolling*/
+    /*            overflow:hidden;*/
+}
+
+
+/*content area*/
+.portfolio-modal .modal-content {
+    /*the paragraph font color*/
+    color: darkslategray;
+    padding: 0 0 2rem 0;
+    min-height: 60%;
+    /* -------   the width of content--------*/
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: left;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    /*the background-color*/
+    background-color: lightgrey;
+}
+
+/*project title*/
+.portfolio-modal .modal-content h2 {
+    margin-top: 0px;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 0rem;
+}
+
+
+/*bottom of the modal box including prev, next, back to work*/
+.portfolio-modal .modal-footer {
+    /*    border: 1px solid black;*/
+    border: none;
+}
+
+
+/*the X close icon*/
+.portfolio-modal .close {
+    font-size: 2rem;
+    /* padding direction:   top:0 right:1rem bottom:0 left:0*/
+    padding: 0 0.5rem 1rem 0;
+    font-weight: 200;
+    color: black;
+}
+
+.portfolio-modal .modal-header {
+    border-bottom: none;
+}
+
+.portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
+
+/*modal box prev, next and back to work link color*/
+.portfolio-modal a.next,
+.portfolio-modal a.prev,
+.portfolio-modal a.back {
+    color: black;
+}
+
+
+/*screen that is larger than the mobile view*/
+@media only screen and (min-width:480px) {
+    .view {
+        background: lightblue url(../img/imghead_large.jpg) center center no-repeat;
+        background-size: cover;
+        /*    5rem for top and bottom, 0 for left and right padding*/
+        padding: 5rem 0;
+    }
+    
+    #homepage .view{padding: 8rem 0;}
+
+    .view h1 {
+        color: white;
+    }
+
+    .view h2 {
+        color: white;
+    }
+
+    /*project title*/
+    .portfolio-modal .modal-content h2 {
+        margin-top: 0px;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+    
+    .portfolio-modal .modal-content{width:80%;}
+    
+
+
+}
